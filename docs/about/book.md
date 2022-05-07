@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
     <img src={useBaseUrl('img/bookCover.png')} alt="Tauri - From Theory to Practice" title="Book Cover Mockup" style={{maxWidth:'80%'}}/>
 </div>
 
-:::note
+:::note Info
 Tauri: From Theory to Practice<br/>
 Architecting Next-Gen Native-Apps for all Platforms [v1:Rust Edition]
 

@@ -19,7 +19,7 @@ Architecting Next-Gen Native-Apps for all Platforms [v1:Rust Edition]
 **Release:** TBD
 :::
 
-### tl;dr;
+### TL;DR
 
 Visit https://opencollective.com/tauri and preorder your copy of the book today. Your donation will support the ongoing development of Tauri, and you will receive advance digital PDF's for your review as chapters are completed. The final book will ship concurrently with the release of 1.0.0 stable.
 
@@ -75,69 +75,68 @@ And you will be able to:
 
 This is an early outline of the contents that we expect to publish. Contents subject to change.
 
-### Chapter 1 - Theory
+### Chapter 1: Theory
 
 (ca. 50 pages - mostly conversational / technical, graphics)
 
-```
- 1. Security Starts with You
- 2. Privacy Ends with ${you}
- 3. Languages, Dialects and Patterns
- 4. Toolchains and Syntactic Sugar
- 5. Production Methodologies
- 6. Enterprise Readiness
- 7. Message Queueing
- 8. Embracing Chaos
- 9. Distribution Techniques
-10. Licensing Strategies
-```
+<details>
+    <summary>Contents</summary>
 
-### Chapter 2 - Practice
+1.  Security Starts with You
+2.  Privacy Ends with ${you}
+3.  Languages, Dialects and Patterns
+4.  Toolchains and Syntactic Sugar
+5.  Production Methodologies
+6.  Enterprise Readiness
+7.  Message Queueing
+8.  Embracing Chaos
+9.  Distribution Techniques
+10. Licensing Strategies
+
+</details>
+
+### Chapter 2: Practice
 
 (ca. 130 pages w/ charts, screenshots, code samples)
 
-```
- 1. Environment Prerequisites
+<details>
+    <summary>Contents</summary>
+
+1.  Environment Prerequisites
     - Node, Npm, Yarn, Rustc, Rustup, Buildtools
- 2. Development Platform Details
-        - macOS
-        - Windows
-        - Linux
-        - Docker
-        - Virtual Machines
-        - CI / CD
- 3. Tauri Introduction
- 4. Tauri Anatomy
- 5. Tauri Configuration
+2.  Development Platform Details - macOS - Windows - Linux - Docker - Virtual Machines - CI / CD
+3.  Tauri Introduction
+4.  Tauri Anatomy
+5.  Tauri Configuration
     - Files & Folders
     - Icons
     - Splash Screens
     - Window
     - `src-tauri/tauri.conf.json`
- 6. Preparing your code
+6.  Preparing your code
     - Transpile dynamic imports
     - Remove webpack chunking
     - Monolithic Files
     - Minification strategies
- 7. Tauri API
+7.  Tauri API
     - Design Considerations
     - API Usage Patterns
     - Custom API Functions
     - Endpoints
-        - All
-        - Answer
-        - Bridge
-        - Event
-        - Execute
-        - List Files
-        - Open
-        - Read Binary File
-        - Read Text File
-        - Set Title
-        - Window
-        - Write File
- 8. Web APIs
- 9. Tauri App Extensions
+      - All
+      - Answer
+      - Bridge
+      - Event
+      - Execute
+      - List Files
+      - Open
+      - Read Binary File
+      - Read Text File
+      - Set Title
+      - Window
+      - Write File
+8.  Web APIs
+9.  Tauri App Extensions
     - Anatomy
     - Flow
     - Registration
@@ -146,9 +145,9 @@ This is an early outline of the contents that we expect to publish. Contents sub
 10. Taskbar Integration (Desktop Only)
     - Anatomy
     - Integrations
-        - macOS
-        - Windows
-        - Linux
+      - macOS
+      - Windows
+      - Linux
 11. Security Features
     - Baseline Rust Features
     - Functional Address Space Layout Randomization (fASLR)
@@ -165,8 +164,8 @@ This is an early outline of the contents that we expect to publish. Contents sub
     - Kamikaze Function Injection (KFI) Closures
 13. Testing
     - Unit Testing
-        - Rust
-        - JS
+      - Rust
+      - JS
     - Integration Testing
     - e2e Testing
 14. Building
@@ -174,26 +173,26 @@ This is an early outline of the contents that we expect to publish. Contents sub
     - Packaging
     - Minification
     - Distribution Platform Details
-        - macOS (.app / .dmg)
-        - Win (.exe / .msi)
-        - Linux Arm64 (.appImage / .deb)
-        - Linux x64 (.appImage / .deb)
-        - iOS (.ipa)
-        - Android (.apk)
-        - PWA Website (with wasm)
+      - macOS (.app / .dmg)
+      - Win (.exe / .msi)
+      - Linux Arm64 (.appImage / .deb)
+      - Linux x64 (.appImage / .deb)
+      - iOS (.ipa)
+      - Android (.apk)
+      - PWA Website (with wasm)
     - Code Signing
-        - Keystores
-        - Certs
-        - Fingerprints
+      - Keystores
+      - Certs
+      - Fingerprints
     - Providing License for End Users
-        - Providers
-        - Keys Files
+      - Providers
+      - Keys Files
     - Self-Updater
-        - Anatomy
-        - Service Provisioning
-            - Github
-            - AWS
-            - Homegrown
+      - Anatomy
+      - Service Provisioning
+        - Github
+        - AWS
+        - Homegrown
     - Cross-Platform Bundler
 15. Tauri-Frida Harness
     - Introduction to Reverse Engineering
@@ -220,13 +219,16 @@ This is an early outline of the contents that we expect to publish. Contents sub
     - Cydia
     - ChromeOS
     - WASM
-```
 
-### Chapter 3 - Philosophical Discourses
+</details>
+
+### Chapter 3: Philosophical Discourses
 
 (ca. 40 pages of essays, some graphics)
 
-```
+<details>
+    <summary>Contents</summary>
+
 1.  Rights and Responsibilities (with Robin van Boven (SFOSC))
     - Who You are Responsible To
     - Being a Vendor Comes with Duties
@@ -245,13 +247,16 @@ This is an early outline of the contents that we expect to publish. Contents sub
     - Use Low-Barrier Tools for Ensuring Wholestack Security
     - Test the Right Things Intelligently
     - Post-Binary Analysis and Redistribution - The Last Mile
-```
 
-### Chapter 4 - Execution
+</details>
+
+### Chapter 4: Execution
 
 (ca. 100 pages w/ code examples, screenshots, graphics)
 
-```
+<details>
+    <summary>Contents</summary>
+
 1.  Base Pattern Evolution
     - Hermit
     - Bridge
@@ -274,26 +279,26 @@ This is an early outline of the contents that we expect to publish. Contents sub
     - Gatsby
 4.  Building a Real App
     - Multiparty Password Manager
-        - Design
-        - Prototyping
-        - Testing
-        - Debugging
-        - Packaging
-        - Checksumming
+      - Design
+      - Prototyping
+      - Testing
+      - Debugging
+      - Packaging
+      - Checksumming
 5.  Tauri-Frida
     - White Box Reversing
-        - Analyzing with Frida
-        - Chaos Experiments
-            - Interface Jacking
-            - Disk Change
-            - Latency
-            - Process Kill
-            - CPU Throttle
-        - Static Analysis Reporting
-    -  Binary Repackaging
-        - Inject License Keys
-        - Clear Dead Codepoints
-        - Recalculate Integrated Checksum
+      - Analyzing with Frida
+      - Chaos Experiments
+        - Interface Jacking
+        - Disk Change
+        - Latency
+        - Process Kill
+        - CPU Throttle
+      - Static Analysis Reporting
+    - Binary Repackaging
+      - Inject License Keys
+      - Clear Dead Codepoints
+      - Recalculate Integrated Checksum
 6.  Publishing the App
     - Git
     - Mac Store
@@ -310,24 +315,28 @@ This is an early outline of the contents that we expect to publish. Contents sub
     - ChromeOS
     - WASM
 7.  Publishing an Update
-```
 
-### Chapter 5 - Appendices
+</details>
+
+### Chapter 5: Appendices
 
 (ca. 120 pages)
 
-```
- 1. Configuration Options
- 2. Files and Repositories
- 3. Tauri CLI references
- 4. Tauri API references
- 5. ES6 References
- 6. Rust References
- 7. App Pattern Charts
- 8. Tauri-Frida Reference
- 9. Glossary
+<details>
+    <summary>Contents</summary>
+
+1.  Configuration Options
+2.  Files and Repositories
+3.  Tauri CLI references
+4.  Tauri API references
+5.  ES6 References
+6.  Rust References
+7.  App Pattern Charts
+8.  Tauri-Frida Reference
+9.  Glossary
 10. Index
-```
+
+</details>
 
 ## Errata
 

@@ -16,6 +16,7 @@ const guides = [
 
 const api = [
   'api/config',
+  'api/config-new',
   'api/cli',
   {
     type: 'link',

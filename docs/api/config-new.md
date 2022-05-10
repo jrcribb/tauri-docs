@@ -48,14 +48,46 @@ WIP
 
 ## `tauri`
 
-### `allowlist`
+| Property          | Type                                   | Description                                                                                                                    |
+| ----------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `allowList`       | [`AllowlistConfig`](#AllowlistConfig)  |                                                                                                                                |
+| `bundle`          | [`BundleConfig`](#AllowlistConfig)     |                                                                                                                                |
+| `cli`             | [`CliConfig`](#AllowlistConfig)        |                                                                                                                                |
+| `macOSPrivateApi` | `boolean`                              | MacOS private API configuration. Enables the transparent background API and sets the `fullScreenEnabled` preference to `true`. |
+| `pattern`         | [`PatternKind`](#AllowlistConfig)      | The pattern to use                                                                                                             |
+| `security`        | [`SecurityConfig`](#AllowlistConfig)   |                                                                                                                                |
+| `systemTray`      | [`SystemTrayConfig`](#AllowlistConfig) |                                                                                                                                |
+| `updater`         | [`UpdaterConfig`](#AllowlistConfig)    |                                                                                                                                |
+| `windows`         | [`WindowConfig[]`](#AllowlistConfig)   |                                                                                                                                |
 
-| Property    | Type        | Description                               |
-| ----------- | ----------- | ----------------------------------------- |
-| `all`       | `boolean`   | Use this flag to enable all API features. |
-| `clipboard` | _See below_ |                                           |
+```json title="Example 'tauri.config.json' file"
+"tauri": {
+"allowlist": {...},
+"bundle": {...},
+"cli": {...},
 
-#### `clipboard`
+"windows": [{
+"title": "Tauri App",
+"width": 800,
+"height": 600,
+"resizable": true,
+"fullscreen": false
+}],
+"security": {
+"csp": "default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self'"
+}
+}
+
+```
+
+### `Allowlist`
+
+| Property    | Type                       | Description                               |
+| ----------- | -------------------------- | ----------------------------------------- |
+| `all`       | `boolean`                  | Use this flag to enable all API features. |
+| `clipboard` | `ClipboardAllowlistConfig` |                                           |
+
+#### `ClipboardAllowlistConfig`
 
 | Property    | Type      | Description                                 |
 | ----------- | --------- | ------------------------------------------- |
@@ -63,14 +95,22 @@ WIP
 | `readText`  | `boolean` | Enables the clipboard's `readText` API      |
 | `writeText` | `boolean` | Enables the clipboard's `writeText` API     |
 
-### `bundle`
+### `BundleConfig`
 
-### `cli`
+### `CliConfig`
 
 ### `macOSPrivateApi`
 
-### `pattern`
+### `PatternKind`
 
 ## Platform-specific configuration
 
 In addition to the JSON defined on the `tauri.conf.json` file, Tauri reads a platform-specific configuration on `tauri.linux.conf.json`, `tauri.windows.conf.json` and `tauri.macos.conf.json` and merges it with the main `tauri.conf.json` configuration.
+
+```
+
+```
+
+```
+
+```
